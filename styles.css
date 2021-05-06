@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+/*INTRO*/
+.intro {
+  /* height: 100vh; */
+  background: url(./img/nice-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background: whitesmoke;
+  box-shadow: 1px 1px 2px #fff;
+}
+.intro h1 {
+  font-size: 1.3rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin: 0 20px;
+}
+nav a {
+  color: #000;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+nav .free {
+  background: #ff9a9e;
+  color: #fff;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.menu {
+  margin: 10px;
+  background: whitesmoke;
+  min-width: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+.menu.active {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  pointer-events: all;
+}
+.menu ul {
+  list-style: none;
+}
+.menu li {
+  margin: 20px;
+}
+.menu a {
+  color: #000;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+.menu a:hover {
+  transition: 0.3s ease-in-out;
+  color: #ff9a9e;
+}
+.burger {
+  display: none;
+}
+.first-content {
+  padding: 130px;
+}
+.content h1 {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 15px 0;
+  color: whitesmoke;
+}
+.content h2 {
+  font-size: 2rem;
+  width: 300px;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  color: #00203fff;
+}
+.content p {
+  width: 400px;
+  line-height: 25px;
+  margin: 15px 0;
+}
+.content ul {
+  list-style: none;
+  display: flex;
+}
+.content li {
+  margin: 10px 10px 10px 0;
+}
+.content a {
+  background: #ff9a9e;
+  color: #fff;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+.last-content {
+  display: flex;
+  width: 100%;
+  background: whitesmoke;
+}
+.last-content p {
+  font-size: 1.5rem;
+  padding: 0 50px;
+  width: 450px;
+}
+/*---------
+RESPONSIVE
+____*/
+@media (max-width: 830px) {
+  .intro header {
+    padding: 10px 0;
+  }
+  .intro header h1 {
+    font-size: 1rem;
+  }
+  nav li {
+    margin: 0 5px;
+  }
+  nav .free {
+    letter-spacing: 0;
+  }
+  .first-content {
+    padding: 130px;
+  }
+  .content h1 {
+    margin: 5px 0;
+  }
+  .content h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    margin: 10px 0;
+  }
+  .last-content {
+    padding: 0 50px;
+  }
+  .last-content p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 550px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+    padding: 0 20px;
+  }
+  .content p {
+    max-width: 300px;
+  }
+  .content h2 {
+    width: 200px;
+  }
+  .first-content {
+    padding: 170px 30px;
+  }
+  .last-content {
+    padding: 0 50px;
+  }
+  .last-content p {
+    padding: 5px;
+  }
+}

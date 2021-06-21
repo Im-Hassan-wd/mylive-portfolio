@@ -8,53 +8,126 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./img/portfolio.svg">
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous ">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous "> -->
 </head>
 <body>
-     <section class='portfolio'>
-        <section class="intro">
+     <div id='portfolio'>
+        <div id="intro">
             <header>
                 <h1>PORTFOLIO</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="free">Get free quote</a></li>
+                      <li><a class="fab fa-accusoft" href="#skills"></a></li>
+                      <li><a class="fas fa-project-diagram" href="#project"></a></li>
+                      <li><a class="fas fa-poll" href="#social"></a></li>
+                      <li><a class="far fa-bell get"></a></li>
                     </ul>
-                    <div class="burger">
-                        <i class="fa fa-bars"></i>
-                    </div>
                 </nav>
             </header>
-             <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="free">Get free quote</a></li>
-                    </ul>
+          </div>
 
-                    </div>
-            <div class="content">
+            <section id="about">
                 <div class="first-content">
                     <h1>GET EVERY SINGLE SOLUTION</h1>
-                    <h2>I'm Designer Hassan T. Weird</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos aliquid ipsam, esse hic laborum mollitia necessitatibus! Saepe, ea adipisci.</p>
+                    <h2>I'm Programmer Hassan T. Weird</h2>
+                    <p>African born, Hassan T is a seasoned in front-end and User interface Developer, using his creativity to bring idea to life. Started programming not quite ago, learned couple of programming languages and some frame works too. And I'll love to learn and explore more.</p>
                     <ul>
                         <li><a href="#">Learn More</a></li>
                         <li><a href="#">Print Resume</a></li>
                     </ul>
                 </div>
-                <div class="last-content">
-                <p>Designing With Passion While Exploring the World.</p>
-                <p>Any Types Of Query &amp; Discussion.</p>
-                </div>
-            </div>
+            </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container"></div>
         </section>
-    </section>
-    <script src="/main.js"></script>
+
+
+        <div class="get-in-touch-wrapper">
+          <div class="get-in-touch">
+            <div class="close"></div>
+            <div class="content">
+              <form netlify>
+                <input type="text" id="username" placeholder="Name" autocomplete="off">
+                <input type="email" id="usermail" placeholder="Email" autocomplete="off">
+                <textarea name="name" rows="8" cols="80" placeholder="Any message for us"></textarea>
+                <button type="submit">Send a message</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <section  id="project">
+          <h1>Projects</h1>
+          <div class="project-item">
+            <div class="proj">
+              <a href="img/todo-add.PNG">
+                <img src="img/todo-add.PNG" alt="">
+              </a>
+              <p>Todos</p>
+            </div>
+
+            <div class="proj">
+              <a href="img/shutter.PNG">
+                <img src="img/shutter.PNG" alt="">
+              </a>
+              <p>Photography Website</p>
+            </div>
+
+            <div class="proj">
+              <a href="img/clothing.PNG">
+                <img src="img/clothing.PNG" alt="">
+              </a>
+              <p>clothing Shop</p>
+            </div>
+
+            <div class="proj">
+              <a href="img/git-proj.PNG">
+                <img src="img/git-proj.PNG" alt="">
+              </a>
+              <p>Github Api Project</p>
+            </div>
+
+            <div class="proj">
+              <a href="img/digital-clock.PNG">
+                <img src="img/digital-clock.PNG" alt="">
+              </a>
+              <p>Digital Clock</p>
+            </div>
+
+            <div class="proj">
+              <a href="img/form-validation.PNG">
+                <img src="img/form-validation.PNG" alt="">
+              </a>
+              <p>Form Validation - RegEx</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="social">
+          <h1>Social</h1>
+          <div class="links">
+            <a class="fab fa-facebook-f" href="https://www.facebook.com/Hassanovita" target="_blank"></a>
+            <a class="fab fa-twitter" href="https://www.twitter.com/bryan_weird" target="_blank"></a>
+            <a class="fab fa-instagram" href="https://www.instagram.com/weird_hassan" target="_blank"></a>
+            <a class="fab fa-github" href="https://www.github.com/Im-Hassan-wd" target="_blank"></a>
+            <a class="fab fa-linkedin" href="https://www.linkedin.com/in/hassan-taiwo-b45034215/" target="_blank"></a>
+          </div>
+        </section>
+
+        <section id="feed-back">
+          <h1>Feedback</h1>
+          <div class="emoji">
+            <i class="far fa-laugh"></i>
+            <i class="far fa-smile smile"></i>
+            <i class="far fa-angry"></i>
+          </div>
+
+        </section>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html>

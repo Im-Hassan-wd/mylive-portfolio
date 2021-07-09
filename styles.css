@@ -44,7 +44,6 @@ nav li{
 }
 nav a {
   text-transform: uppercase;
-  color: #00539C;
   color: hsl(224, 36%, 15%);
   background: #EEA47F;
   text-decoration: none;
@@ -61,8 +60,8 @@ nav a {
 nav a:hover{
   transition: all .5s linear;
   transform: scale(1.2);
-  color: #EEA47F;
-  background: #00539C;
+  color: hsl(224, 36%, 15%);
+  background: #EEE;
 }
 /* ABOUT SECTION */
 .first-content {
@@ -229,22 +228,16 @@ form button{
 .proj{
   margin: 20px auto;
   box-shadow: 2px 2px 4px #000;
-  /* position: relative; */
+  position: relative;
   z-index: 5;
   overflow: hidden;
   background: hsl(224, 36%, 15%);
 }
-.proj p{
+/* .proj p{
   padding: 20px 0 5px 0;
-}
-.proj .links{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10px;
-}
+} */
 .proj .links a{
-  background: #EEE;
+  background: rgba(1, 0, 0, 0.7)
   color: #000;
 }
 .proj .links a:hover{
@@ -258,7 +251,16 @@ form button{
 .proj img:hover{
   transform: scale(1.1);
   transition: transform .5s;
-
+}
+.proj .links{
+  padding: 15px;
+  width: 100%;
+  background: rgba(1, 0, 0, 0.5);
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
 }
 /* SOCIAL LINKS */
 #social{
@@ -310,8 +312,9 @@ background: #00539C; */
 }
 .emoji i{
   font-size: 30px;
-  padding: 50px;
+  margin: 50px;
   text-align: center;
+  cursor: pointer;
 }
 .fa-laugh{
   color: green;
@@ -324,7 +327,7 @@ background: #00539C; */
 }
 
 
-/* SECTION APPEAR */
+/* SCROLL APPEAR */
 section{
   transform: translateY(70px);
   opacity: 0;
@@ -332,7 +335,7 @@ section{
 }
 section.appear{
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 
@@ -432,7 +435,7 @@ ____*/
     padding: 170px 30px;
   }
   .get-in-touch{
-    margin: 100px auto;
+    margin: 150px auto;
     width: 100%;
     max-width: 380px;
   }

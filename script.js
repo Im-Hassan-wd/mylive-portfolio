@@ -1,3 +1,4 @@
+const portfolio = document.querySelector('body');
 const sections = document.querySelectorAll('section');
 const form = document.querySelector('form');
 
@@ -5,7 +6,7 @@ const scrollAppear = () => {
 
   sections.forEach(section => {
     const sectionPosition = section.getBoundingClientRect().top;
-    const screenPosition = innerHeight / 1.2;
+    const screenPosition = innerHeight / 1.3;
 
     if(sectionPosition < screenPosition){
       section.classList.add('appear');
@@ -32,6 +33,15 @@ close.addEventListener('click', () => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   form.reset();
+  portfolio.innerHTML = `
+    <h2>Your message has been sent successfully</h2>
+    <a href="index.html" class="fas fa-arrow-left">Go back to our site</a>
+  `;
+  portfolio.style.background = 'hsl(224, 36%, 15%)';
+  portfolio.style.marginTop = '50%';
+  portfolio.style.textAlign = 'center';
+  portfolio.style.color = '#EEE';
+
 });
 
 
@@ -54,11 +64,6 @@ const skills = [
                 responsive, mobile-first front-end web development. It contains
                 CSS- and JavaScript-based design templates for typography,
                 forms, buttons, navigation, and other interface components.`, icon:'fab fa-bootstrap', tag: 'Bootstrap'},
-  {name:'React Js', description: `React is an open-source front-end JavaScript library for
-                building user interfaces or UI components. It is maintained by
-                Facebook and a community of individual developers and companies.
-                React can be used as a base in the development of single-page or
-                mobile applications.`, icon:'fab fa-react', tag: 'React'},
   {name:'Api GraphQL-Rest', description: `In computing, an application programming interface is an
                 interface that defines interactions between multiple software
                 applications or mixed hardware-software intermediaries.`, icon:'fas fa-server', tag: 'Api'},
@@ -70,10 +75,9 @@ const skills = [
                 development and version control using Git. It offers the
                 distributed version control and source code management
                 functionality of Git, plus its own features.`, icon:'fab fa-git-alt', tag: 'Git'},
-  {name:'Ecma Script 6', description: `ES6 is the newer and improved JavaScript with lots and cool new features,\.`, icon:'fab fa-js', tag: 'ES6'},
-  {name:'Node Js', description: `Node.js is an open-source, cross-platform, back-end JavaScript
-                runtime environment that runs on the V8 engine and executes
-                JavaScript code outside a web browser.`, icon:'fab fa-node-js', tag: 'Node Js'}
+  {name:'Ecma Script 6', description: `ES6 is the newer and improved JavaScript with lots and cool new features.`, icon:'fab fa-js', tag: 'ES6'},
+  {name:'PHP', description: `.`, icon:'fab fa-js', tag: 'ES6'}
+
 ];
 
 

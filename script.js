@@ -1,6 +1,6 @@
 const portfolio = document.querySelector('body');
 const sections = document.querySelectorAll('section');
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
 
 const scrollAppear = () => {
 
@@ -30,19 +30,19 @@ close.addEventListener('click', () => {
 });
 
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  form.reset();
-  portfolio.innerHTML = `
-    <h2>Your message has been sent successfully</h2>
-    <a href="index.html" class="fas fa-arrow-left">Go back to our site</a>
-  `;
-  portfolio.style.background = 'hsl(224, 36%, 15%)';
-  portfolio.style.marginTop = '50%';
-  portfolio.style.textAlign = 'center';
-  portfolio.style.color = '#EEE';
-
-});
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   form.reset();
+//   portfolio.innerHTML = `
+//     <h2>Your message has been sent successfully</h2>
+//     <a href="index.html" class="fas fa-arrow-left">Go back to our site</a>
+//   `;
+//   portfolio.style.background = 'hsl(224, 36%, 15%)';
+//   portfolio.style.marginTop = '50%';
+//   portfolio.style.textAlign = 'center';
+//   portfolio.style.color = '#EEE';
+//
+// });
 
 
 // SKILLS
@@ -76,7 +76,7 @@ const skills = [
                 distributed version control and source code management
                 functionality of Git, plus its own features.`, icon:'fab fa-git-alt', tag: 'Git'},
   {name:'Ecma Script 6', description: `ES6 is the newer and improved JavaScript with lots and cool new features.`, icon:'fab fa-js', tag: 'ES6'},
-  {name:'PHP', description: `.`, icon:'fab fa-js', tag: 'ES6'}
+  {name:'PHP', description: `PHP is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic.`, icon:'fab fa-php', tag: 'PHP'}
 
 ];
 

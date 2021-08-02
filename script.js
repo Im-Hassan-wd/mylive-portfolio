@@ -1,5 +1,6 @@
 const portfolio = document.querySelector('body');
 const sections = document.querySelectorAll('section');
+const smile = document.querySelector('.emoji');
 // const form = document.querySelector('form');
 
 const scrollAppear = () => {
@@ -107,6 +108,8 @@ const emojis = document.querySelectorAll('.emoji i');
 emojis.forEach(emoji => {
 
   emoji.addEventListener('click', (e) => {
+    localStorage.setItem('key', e.target.outerHTML);
+    console.log(e.target.outerHTML);
     if(emoji.nextElementSibling){
       emoji.nextElementSibling.remove();
       if(emoji.nextElementSibling){
@@ -119,17 +122,13 @@ emojis.forEach(emoji => {
         emoji.previousElementSibling.remove();
       }
     }
-    // const smile = document.querySelector('.emoji');
-    //
-    // localStorage.setItem('key', e.target);
-    //
-    // if(localStorage.getItem('key')){
-    //   smile.innerHTML = e.target
-    // }
-    // localStorage.clear();
+
   });
 });
 
+if(localStorage.getItem('key')){
+  smile.innerHTML = localStorage.getItem('key');
+}
 
 
 

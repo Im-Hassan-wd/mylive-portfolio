@@ -56,6 +56,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 nav a:hover{
   transition: all .5s linear;
